@@ -1,0 +1,47 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.form > input {
+  text-align: center;
+  display: block;
+  width: 90%;
+  padding: 5%;
+  border: transparent;
+  border-radius: 10px;
+  background: cornsilk;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.form > button {
+  display: block;
+  width: fit-content;
+  padding: 5px 20px;
+  margin: 10px auto;
+  border: transparent;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+}
+
+.form > #message {
+  text-align: center;
+}

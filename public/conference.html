@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="/public/css/conference.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <title>Voice Conference</title>
+  </head>
+  <body>
+    <div class="bg">
+      <img src="/public/background.jpg" />
+      <div class="mic">
+        <p id="message">Please Provide Microphone Access</p>
+        <span><i class="fas fa-microphone-slash"></i></span>
+      </div>
+      <div class="conference">
+        
+      </div>
+    </div>
+    <div class="audio-container"></div>
+    <!--users chat container-->
+    <div class="text-chat-container">
+      <h3>Chats</h3>
+      <!--Message Container-->
+      <div class="message-container"></div>
+      <!--Message Form-->
+      <form>
+        <input type="text" name="message" placeholder="Enter message" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+  <script src="/public/js/conference.js" defer></script>
+</html>

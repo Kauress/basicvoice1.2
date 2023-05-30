@@ -1,0 +1,16 @@
+{
+  "name": "voiceconference",
+  "version": "1.0.0",
+  "description": "voice conference webapp",
+  "main": "server.js",
+  "scripts": {
+    "start":"node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2",
+    "socket.io": "4.6.1",
+    "uuid": "9.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="/public/css/index.css" rel="stylesheet" />
+    <title>Voice Conference</title>
+  </head>
+  <body>
+    <form class="form" action="/" method="post">
+      <input name="username" placeholder="USERNAME" required />
+      <button>LOGIN</button>
+      <p id="message"></p>
+    </form>
+  </body>
+  <script>
+    const message = new URLSearchParams(window.location.search).get("message");
+    if (message) document.querySelector("#message").textContent = message;
+  </script>
+</html>
